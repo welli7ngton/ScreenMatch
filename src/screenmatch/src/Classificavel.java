@@ -1,2 +1,5 @@
-package screenmatch.src;public interface Classificavel {
+package screenmatch.src;
+
+public interface Classificavel {
+    int getReviewNote();
 }
