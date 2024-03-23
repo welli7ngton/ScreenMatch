@@ -13,7 +13,6 @@ class Carro {
         this.model = model;
         this.year = year;
         this.price = price;
-        cars.add(this);
     }
 
     public String getModel() {
@@ -29,11 +28,7 @@ class Carro {
     }
 
     public void showCarsInfo(){
-        for (Carro e:cars){
-            System.out.println(e.getModel());
-            System.out.println(e.getPrice());
-            System.out.println(e.getYear());
-        }
+        System.out.println("array size = " + cars.size());
     }
 }
 
@@ -42,10 +37,12 @@ class ModelCar extends Carro{
     public static void main(String[] args) {
         ModelCar corolla = new ModelCar("Corolla", 2018, 75000);
         ModelCar fox = new ModelCar("Fox", 2018, 65000);
+
         fox.showCarsInfo();
     }
 
     public ModelCar(String model, int year, double price){
+
         super(model, year, price);
     }
 }
